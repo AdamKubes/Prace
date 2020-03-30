@@ -1,0 +1,33 @@
+table, td {
+  padding: 1px;
+  border:1px solid red;
+}
+
+body{
+    background-color: orange; color:blue;
+    div p{
+    color:yellow;}
+}
+
+th {background:greenyellow}
+td {background:navajowhite}
+
+.center{
+    text-align: center;
+}
+
+.right{
+   text-align: right; 
+}
+
+.left{
+  text-align: left;  
+}
+
+.puntik{
+    list-style-image: URL('puntik.gif');
+}
+
+div div div div h3 {
+    color:lightblue;
+}
