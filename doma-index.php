@@ -58,11 +58,7 @@
             var_dump($a < $b);
             var_dump($a || $b);
             var_dump($a && $b);
-
-            /**
-             * Promena typ pole
-             */
-            ?>
+        ?>
         <br>
         <hr>
         <br>
@@ -71,5 +67,49 @@
         <hr>
         <br>
         <?PHP echo "\\"; ?>
+        <br>
+        <hr>
+        <br>
+        <?PHP
+        $AdamKubes1 = 1; 
+        $AdamKubes2 = 1; 
+             
+        if($AdamKubes1){
+        echo "Adam Kubes <br>"; }
+        if ($AdamKubes1 < $AdamKubes2) {
+        echo "Adam <br>" ; 
+        } else {
+        echo "Kubes <br>";}
+        if ($AdamKubes1 == $AdamKubes2){ 
+            echo "Adam ";
+            if ($AdamKubes1 <= $AdamKubes2){
+                echo "Kubes <br>";
+            }
+        }
+        switch ($AdamKubes1) {
+            case 0: break;
+            case 1: echo "znamka <br>"; break;
+            case 2: break;
+            case 3: break;
+            case 4: break;
+            case 5: break;
+        }
+        $produkty = array(1 =>"minecraft", 2 =>"minecraft", 3 =>"minecraft",4 =>"minecraft",5 =>"minecraft",6 =>"minecraft",7 =>"minecraft",8 =>"minecraft",9 =>"minecraft",10 =>"minecraft");
+        var_dump($produkty);
+        $produkty1["hm"] = array( );
+        $produkty1["jk"] = array( );
+        $produkty1["idk"] = array(
+        array('jméno' => 'Adam', 'pohlaví' => 'M', 'druh' => 'beloch', 'povolani' => 'student', 'věk' => 18),
+        array('jméno' => 'Marie', 'pohlaví' => 'F', 'druh' => 'beloska', 'povoloani' => 'kucharka', 'věk' => 33),
+        array('jméno' => 'Max', 'pohlaví' => 'M', 'druh' => 'beloch', 'povolani' => 'reporter', 'věk' => 39 ),
+        array('jméno' => 'Jenda', 'pohlaví' => 'M', 'druh' => 'cernoch', 'povolani' => 'student', 'věk' => 12),
+        array('jméno' => 'Tomáš', 'pohlaví' => 'M', 'druh' => 'beloch', 'povolani' => 'kopac', 'věk' => 62),
+        array('jméno' => 'Lenovo', 'verze' => 'M', 'druh' => 'pracovni', 'pamet' => '512GB', 'cena' => 4000),
+        array('jméno' => 'Acer', 'verze' => 'druha', 'druh' => 'herni', 'pamet' => '1TB', 'cena' => 7000),
+        array('jméno' => 'Asus', 'verze' => 'prvni', 'druh' => 'herni', 'pamet' => '1TB', 'cena' => 8000),
+        array('jméno' => 'Apple', 'verze' => 'druha', 'druh' => 'pracovni', 'pamet' => '512GB', 'cena' => 90000),
+        array('jméno' => 'Dell', 'verze' => 'druha', 'druh' => 'herni', 'pamet' => '512CB', 'cena' => 6000));
+        var_dump($produkty1)  
+       ?>
     </body>
 
