@@ -1,4 +1,8 @@
- <head>
+<?PHP require 'tracy/tracy.phar';
+use Tracy\Debugger;
+Debugger::enable();
+Debugger::$strictMode = true;?>
+<head>
     <title>
         PHP ukol
     </title>
@@ -42,22 +46,22 @@
             $a = 8;
             $b = 5;
 
-            var_dump($a + $b);
-            var_dump($a - $b);
-            var_dump($a / $b);
-            var_dump($a * $b);
-            var_dump($a++);
-            var_dump($a--);
-            var_dump($a += $b);
-            var_dump($a -= $b);
-            var_dump($a *= $b);
-            var_dump($a /= $b);
-            var_dump($a == $b);
-            var_dump($a != $b);
-            var_dump($a > $b);
-            var_dump($a < $b);
-            var_dump($a || $b);
-            var_dump($a && $b);
+            dump($a + $b);
+            dump($a - $b);
+            dump($a / $b);
+            dump($a * $b);
+            dump($a++);
+            dump($a--);
+            dump($a += $b);
+            dump($a -= $b);
+            dump($a *= $b);
+            dump($a /= $b);
+            dump($a == $b);
+            dump($a != $b);
+            dump($a > $b);
+            dump($a < $b);
+            dump($a || $b);
+            dump($a && $b);
         ?>
         <br>
         <hr>
@@ -95,7 +99,7 @@
             case 5: break;
         }
         $produkty = array(1 =>"minecraft", 2 =>"minecraft", 3 =>"minecraft",4 =>"minecraft",5 =>"minecraft",6 =>"minecraft",7 =>"minecraft",8 =>"minecraft",9 =>"minecraft",10 =>"minecraft");
-        var_dump($produkty);
+        dump($produkty);
         $produkty1["hm"] = array( );
         $produkty1["jk"] = array( );
         $produkty1["idk"] = array(
@@ -109,7 +113,7 @@
         array('jméno' => 'Asus', 'verze' => 'prvni', 'druh' => 'herni', 'pamet' => '1TB', 'cena' => 8000),
         array('jméno' => 'Apple', 'verze' => 'druha', 'druh' => 'pracovni', 'pamet' => '512GB', 'cena' => 90000),
         array('jméno' => 'Dell', 'verze' => 'druha', 'druh' => 'herni', 'pamet' => '512CB', 'cena' => 6000));
-        var_dump($produkty1)  
+        dump($produkty1)  
        ?>
     </body>
 
