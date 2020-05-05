@@ -115,5 +115,92 @@ Debugger::$strictMode = true;?>
         array('jméno' => 'Dell', 'verze' => 'druha', 'druh' => 'herni', 'pamet' => '512CB', 'cena' => 6000));
         dump($produkty1)  
        ?>
+       <br>
+       <hr>
+       <br>
+       <?PHP
+       $radekAdamKubes=11;
+       $sloupecAdamKubes=17;
+       
+       echo "<table border=1>";
+       for ($i = 0; $i <= $radekAdamKubes; $i++){
+           echo "<tr>";
+           for ($a = 0; $a <= $sloupecAdamKubes; $a++){
+               echo "<td>".$i."-".$a."</td>";
+           }
+           echo "</tr>";
+        }
+        echo"</table><br><br><br>";
+       ?>
+       <br>
+       <hr>
+       <br>
+       <?PHP
+         echo"<br>";
+            //práce s mat. fcemi
+            echo"matematicka funkce<br>";
+            $a = "A3C4F";
+            $a = hexdec($a);
+            echo $a . "<br> log10:<br>";
+            $a = 40.5;
+            $a = log10($a);
+            echo $a . "<br>";
+            //PRÁCE S ŘETĚZCEM
+            $jmena = "Jan, jAnA, MARIE;Petr-PAveL";
+            dump($jmena);
+            $jmena = str_replace(" ", ",", $jmena);
+            dump($jmena);
+            $jmena = str_replace(",,", ",", $jmena);
+            dump($jmena);
+            $jmena = str_replace("-", ",", $jmena);
+            dump($jmena);
+            $jmena = str_replace(";", ",", $jmena);
+            $jmena = str_replace(",", ", ", $jmena);
+            dump($jmena);
+            $jmena = strtolower($jmena);
+            dump($jmena);
+            $jmena = ucwords($jmena);
+            dump($jmena);
+            $jmena = explode(" ", $jmena);
+            echo"<br>";
+            //práce s poli
+            $pole = array("ok","ok1");
+            dump($pole);
+            echo sizeof($pole);
+       ?>
+       <br>
+       <hr>
+       <br>
+       <?PHP
+       $i=1;
+       foreach($produkty as $produkty){
+           echo $i."-".
+                   $produkty ."<br>";
+       $i++;}
+       ?>
+       <br>
+       <hr>
+       <br>
+       <?PHP
+       //vlastní funkce
+                   /**
+             * Vypíše tabulku
+             * @author Adam Kubeš
+             * @param int $znamka
+             * @param int $druhaznamka
+             */
+            function tabulka($znamka, $druhaznamka) {
+                echo "<table border=\"1\">";
+                for($i= 1; $i <= $znamka; $i++){
+                    echo"<tr>";
+                    for($j = 1;$j <= $druhaznamka; $j++){
+                        echo"<td>" . $i . "-" . $j . "</td>";
+                    }
+                    echo"</tr>";
+                }
+                echo"</table>";
+            }
+            tabulka(2,5 );
+       ?>
     </body>
 
